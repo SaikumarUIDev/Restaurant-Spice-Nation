@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Spice Nation | Authentic Indian Restaurant in ECIL, Secunderabad</title>
+<meta name="description" content="Experience flavorful biryanis, Indian favourites and warm dining at Spice Nation, ECIL, Kushaiguda, Secunderabad." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<!-- Bootstrap (local files) -->
+<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Icons (Bootstrap Icons via local vendor folder is not bundled; using inline SVGs instead, see script.js) -->
+
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header id="siteHeader" class="site-header fixed-top">
+  <div class="container-fluid header-inner d-flex align-items-center justify-content-between">
+    <a href="#home" class="brand-link js-scroll">
+      <span class="brand-name">SPICE NATION</span>
+      <span class="brand-sub">Indian Kitchen</span>
+    </a>
+
+    <nav class="d-none d-lg-flex align-items-center gap-4 main-nav">
+      <a href="#home" class="nav-link-custom js-scroll">Home</a>
+      <a href="#story" class="nav-link-custom js-scroll">Our Story</a>
+      <a href="#menu" class="nav-link-custom js-scroll">Menu</a>
+      <a href="#gallery" class="nav-link-custom js-scroll">Gallery</a>
+      <a href="#reviews" class="nav-link-custom js-scroll">Reviews</a>
+      <a href="#contact" class="nav-link-custom js-scroll">Contact</a>
+    </nav>
+
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <a href="#contact" class="btn btn-spice-outline js-scroll btn-rounded">Reserve table</a>
+      <a href="#menu" class="btn btn-spice js-scroll btn-rounded">Order online <i class="bi-arrow">→</i></a>
+    </div>
+
+    <button class="btn btn-ghost d-lg-none" id="mobileMenuBtn" aria-label="Open menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ===== Mobile Menu Overlay ===== -->
+<div id="mobileMenu" class="mobile-menu">
+  <div class="d-flex flex-column h-100 p-4">
+    <div class="d-flex align-items-center justify-content-between">
+      <span class="brand-name text-ivory">SPICE NATION</span>
+      <button class="btn btn-ghost text-ivory" id="mobileMenuClose" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="my-auto d-flex flex-column gap-4">
+      <a href="#home" class="mobile-nav-link js-scroll">Home</a>
+      <a href="#story" class="mobile-nav-link js-scroll">Our Story</a>
+      <a href="#menu" class="mobile-nav-link js-scroll">Menu</a>
+      <a href="#gallery" class="mobile-nav-link js-scroll">Gallery</a>
+      <a href="#reviews" class="mobile-nav-link js-scroll">Reviews</a>
+      <a href="#contact" class="mobile-nav-link js-scroll">Contact</a>
+    </nav>
+    <div class="row g-2">
+      <div class="col-6"><a href="#contact" class="btn btn-spice-outline w-100 js-scroll">Reserve</a></div>
+      <div class="col-6"><a href="#menu" class="btn btn-spice w-100 js-scroll">Order online</a></div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ===== Hero ===== -->
+<section id="home" class="hero grain">
+  <img src="assets/images/spice-nation-hero.jpg" alt="Steaming mutton biryani in a brass handi" class="hero-img hero-zoom" />
+  <div class="hero-gradient"></div>
+  <svg class="spice-mark drift d-none d-lg-block" style="position:absolute; right:8%; top:18%; width:130px; height:130px; color:rgba(198,166,60,.5);" viewBox="0 0 120 120" fill="none">
+    <path d="M23 78c28-4 45-20 52-51 8 24 0 54-28 66M36 72c7-4 13-10 18-17M72 28c11 6 19 16 22 29M88 79c-7 8-17 13-30 15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M83 70c9-11 14-20 11-27-8 1-15 9-18 22" stroke="currentColor" stroke-width="1.4"/>
+  </svg>
+
+  <div class="container-fluid hero-content">
+    <div class="hero-text">
+      <p class="eyebrow eyebrow-brass hero-rise" style="animation-delay:100ms">Authentic Indian cuisine</p>
+      <h1 class="hero-title">
+        <span class="hero-rise d-block" style="animation-delay:220ms">WHERE SPICE</span>
+        <span class="hero-rise d-block" style="animation-delay:350ms">BECOMES A</span>
+        <span class="hero-rise d-block" style="animation-delay:480ms">MEMORY.</span>
+      </h1>
+      <p class="hero-desc hero-rise" style="animation-delay:680ms">Bold flavours, fragrant biryanis and timeless Indian favourites, crafted for moments worth sharing.</p>
+      <div class="d-flex flex-wrap gap-3 mt-4 hero-rise" style="animation-delay:800ms">
+        <a href="#menu" class="btn btn-spice btn-lg js-scroll btn-rounded">Explore menu →</a>
+        <a href="#menu" class="btn btn-spice-outline btn-lg js-scroll btn-rounded">Order online</a>
+      </div>
+    </div>
+
+    <div class="hero-footer hero-rise" style="animation-delay:950ms">
+      <span class="hero-location">📍 ECIL · Kushaiguda · Secunderabad</span>
+      <div class="d-none d-sm-block text-end">
+        <div class="stars">★★★★★</div>
+        <p class="hero-rating">4.7 / 5 · 2,000+ REVIEWS</p>
+      </div>
+    </div>
+  </div>
+  <a href="#story" class="scroll-down js-scroll d-none d-lg-block" aria-label="Scroll to our story">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+  </a>
+</section>
+
+<!-- ===== Story ===== -->
+<section id="story" class="section-pad bg-body-cream position-relative overflow-hidden">
+  <div class="container-fluid">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5 reveal">
+        <p class="eyebrow eyebrow-primary">The Spice Nation story</p>
+        <h2 class="display-heading">MORE THAN<br />A MEAL.</h2>
+        <p class="lead-text">Spice Nation brings together bold Indian flavours, comforting classics and a warm dining experience made for family, friends and unforgettable meals.</p>
+        <p class="story-tag">Made with spice · Served with heart</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="story-image-wrap image-reveal">
+          <img src="assets/images/spice-nation-interior.jpg" alt="Warm contemporary dining room with brass lights" class="story-image" />
+          <div class="story-badge">
+            <span class="badge-label">Designed for</span>
+            <span class="badge-value">Gathering well</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Signatures ===== -->
+<section class="section-pad bg-charcoal text-ivory">
+  <div class="container-fluid">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-5 reveal">
+      <div>
+        <p class="eyebrow eyebrow-brass">The signatures</p>
+        <h2 class="display-heading display-heading-sm">THE DISHES PEOPLE<br />COME BACK FOR.</h2>
+      </div>
+      <a href="#menu" class="view-menu-link js-scroll">View full menu →</a>
+    </div>
+    <div class="row g-3 signatures-grid">
+      <div class="col-lg-6 reveal">
+        <article class="signature-card signature-card-tall" style="background-image:url('assets/images/spice-nation-signatures.jpg'); background-position:0% 0%;">
+          <span class="signature-tag">Popular</span>
+          <div class="signature-info">
+            <h3>Mutton Biryani</h3>
+            <div class="signature-info-row"><p>Slow-cooked layers of fragrance and depth.</p><span>→</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-12 reveal">
+            <article class="signature-card" style="background-image:url('assets/images/spice-nation-signatures.jpg'); background-position:100% 0%;">
+              <span class="signature-tag">Chef's pick</span>
+              <div class="signature-info"><h3>Tangdi Kabab</h3><div class="signature-info-row"><p>Smoky, succulent and charred at the edges.</p><span>→</span></div></div>
+            </article>
+          </div>
+          <div class="col-sm-6 reveal">
+            <article class="signature-card" style="background-image:url('assets/images/spice-nation-signatures.jpg'); background-position:0% 100%;">
+              <span class="signature-tag">Must try</span>
+              <div class="signature-info"><h3>Chicken Tikka Biryani</h3><div class="signature-info-row"><p>Two favourites, brought together beautifully.</p><span>→</span></div></div>
+            </article>
+          </div>
+          <div class="col-sm-6 reveal">
+            <article class="signature-card" style="background-image:url('assets/images/spice-nation-signatures.jpg'); background-position:100% 100%;">
+              <span class="signature-tag">Favourite</span>
+              <div class="signature-info"><h3>Butter Garlic Chicken</h3><div class="signature-info-row"><p>Velvety richness finished with roasted garlic.</p><span>→</span></div></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Menu ===== -->
+<section id="menu" class="section-pad bg-body-cream">
+  <div class="container-fluid">
+    <div class="reveal menu-heading-wrap">
+      <p class="eyebrow eyebrow-primary">Explore the menu</p>
+      <h2 class="display-heading">A TABLE FULL<br />OF FLAVOUR.</h2>
+      <p class="lead-text-sm">Representative selection and pricing. Please call for current availability.</p>
+    </div>
+
+    <div class="reveal menu-tabs" id="menuTabs">
+      <button class="menu-tab active" data-cat="Biryani">Biryani</button>
+      <button class="menu-tab" data-cat="Starters">Starters</button>
+      <button class="menu-tab" data-cat="Tandoori">Tandoori</button>
+      <button class="menu-tab" data-cat="Main Course">Main Course</button>
+      <button class="menu-tab" data-cat="Breads">Breads</button>
+      <button class="menu-tab" data-cat="Soups">Soups</button>
+      <button class="menu-tab" data-cat="Seafood">Seafood</button>
+      <button class="menu-tab" data-cat="Desserts">Desserts</button>
+      <button class="menu-tab" data-cat="Vegetarian">Vegetarian</button>
+    </div>
+
+    <div class="row g-4 menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- ===== Biryani Feature ===== -->
+<section class="biryani-feature grain">
+  <img src="assets/images/spice-nation-hero.jpg" alt="Fragrant biryani with saffron and mint" class="biryani-feature-img" />
+  <div class="biryani-feature-gradient"></div>
+  <div class="biryani-feature-content reveal">
+    <p class="eyebrow eyebrow-brass">Our biryani ritual</p>
+    <h2 class="display-heading display-heading-xl">THE HEART OF<br />SPICE NATION.</h2>
+    <p class="biryani-feature-desc">Slow-cooked. Fragrant. Full of flavour.</p>
+    <button class="btn btn-spice btn-lg mt-4 btn-rounded" id="discoverBiryaniBtn">Discover our biryanis →</button>
+  </div>
+  <div class="steam" style="right:28%; top:24%;"></div>
+  <div class="steam" style="right:35%; top:18%; animation-delay:1.4s;"></div>
+  <div class="d-none d-lg-flex biryani-labels">
+    <span>Saffron</span><span>Mint</span><span>Fried onion</span><span>Cardamom</span>
+  </div>
+</section>
+
+<!-- ===== Spice Trail ===== -->
+<section class="section-pad-sm bg-secondary-tone spice-pattern overflow-hidden">
+  <div class="container-fluid">
+    <div class="d-flex align-items-end justify-content-between reveal">
+      <div>
+        <p class="eyebrow eyebrow-primary">From fragrance to flavour</p>
+        <h2 class="display-heading">THE SPICE TRAIL.</h2>
+      </div>
+      <span class="d-none d-md-block spice-trail-arrow">→</span>
+    </div>
+    <div class="spice-trail-scroll" id="spiceTrail"></div>
+  </div>
+</section>
+
+<!-- ===== Experience ===== -->
+<section class="section-pad bg-body-cream">
+  <div class="container-fluid">
+    <div class="reveal mb-5">
+      <p class="eyebrow eyebrow-primary">At Spice Nation</p>
+      <h2 class="display-heading">COME FOR THE FOOD.<br />STAY FOR THE MOMENTS.</h2>
+    </div>
+    <div class="row g-3 experience-grid align-items-end">
+      <div class="col-lg-6">
+        <figure class="exp-figure exp-figure-a image-reveal">
+          <img src="assets/images/spice-nation-interior.jpg" alt="Contemporary restaurant interior" />
+          <figcaption>Warm ambience</figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <figure class="exp-figure exp-figure-b image-reveal">
+          <img src="assets/images/spice-nation-family.jpg" alt="Family sharing an Indian meal" />
+          <figcaption>Family dining</figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <figure class="exp-figure exp-figure-c image-reveal">
+          <img src="assets/images/spice-nation-tandoor.jpg" alt="Paneer and vegetables grilling over charcoal" />
+          <figcaption>Private dining</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Gallery ===== -->
+<section id="gallery" class="section-pad bg-charcoal text-ivory">
+  <div class="container-fluid">
+    <div class="reveal mb-5">
+      <p class="eyebrow eyebrow-brass">A feast for the senses</p>
+      <h2 class="display-heading">IN FRAME.</h2>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- Gallery Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="btn btn-ghost text-ivory lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <button class="btn btn-ghost text-ivory lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+  </button>
+  <img src="" alt="" id="lightboxImg" />
+  <button class="btn btn-ghost text-ivory lightbox-next" id="lightboxNext" aria-label="Next image">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+  </button>
+  <p class="lightbox-count" id="lightboxCount"></p>
+</div>
+
+<!-- ===== Reviews ===== -->
+<section id="reviews" class="section-pad bg-body-cream">
+  <div class="container-fluid">
+    <div class="row g-5 align-items-end">
+      <div class="col-lg-5 reveal">
+        <p class="eyebrow eyebrow-primary">Guest notes</p>
+        <h2 class="display-heading">LOVED BY<br />OUR GUESTS.</h2>
+        <div class="d-flex align-items-end gap-3 mt-4">
+          <span class="review-score">4.7</span>
+          <div>
+            <div class="stars stars-primary">★★★★★</div>
+            <p class="review-count">2,000+ reviews</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 reveal review-quote-col">
+        <span class="quote-mark">&ldquo;</span>
+        <blockquote class="review-quote" id="reviewQuote"></blockquote>
+        <p class="review-attribution">Guest review · 5 stars</p>
+        <div class="d-flex gap-2 mt-4">
+          <button class="btn btn-quiet btn-icon" id="reviewPrev" aria-label="Previous review">←</button>
+          <button class="btn btn-quiet btn-icon" id="reviewNext" aria-label="Next review">→</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Stats ===== -->
+<section class="stats-section bg-charcoal text-ivory">
+  <div class="row g-0 text-center">
+    <div class="col-6 col-lg-3 stat-cell reveal"><strong>4.7★</strong><span>Customer rating</span></div>
+    <div class="col-6 col-lg-3 stat-cell reveal"><strong>2,000+</strong><span>Reviews</span></div>
+    <div class="col-6 col-lg-3 stat-cell reveal"><strong>₹200–₹400</strong><span>Average spend</span></div>
+    <div class="col-6 col-lg-3 stat-cell reveal"><strong>10–45 min</strong><span>Typical visit</span></div>
+  </div>
+</section>
+
+<!-- ===== Location ===== -->
+<section id="contact" class="section-pad bg-secondary-tone">
+  <div class="container-fluid">
+    <div class="row g-5 align-items-stretch">
+      <div class="col-lg-5 reveal">
+        <p class="eyebrow eyebrow-primary">Visit us</p>
+        <h2 class="display-heading">FIND YOUR WAY<br />TO FLAVOUR.</h2>
+        <h3 class="location-name">Spice Nation</h3>
+        <address class="location-address">A3/4A, First Floor<br />Electronic Complex<br />Kushaiguda, ECIL<br />Secunderabad, Telangana</address>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="https://www.google.com/maps/search/?api=1&query=Spice+Nation+A3%2F4A+Electronic+Complex+Kushaiguda+ECIL+Secunderabad" target="_blank" rel="noreferrer" class="btn btn-spice btn-lg btn-rounded">Get directions 📍</a>
+          <a href="tel:07013486961" class="btn btn-quiet btn-lg btn-rounded">Call restaurant 📞</a>
+        </div>
+      </div>
+      <div class="col-lg-7">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.6622540507146!2d78.57206769999999!3d17.4758723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9dd6500c1603%3A0x149b264cf455d55d!2sSPICE%20NATION%20restaurant!5e0!3m2!1sen!2sin!4v1788807115277!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Final CTA ===== -->
+<section class="final-cta grain text-ivory text-center">
+  <img src="assets/images/spice-nation-feast.jpg" alt="Indian feast ready to order" class="final-cta-blob final-cta-blob-1" />
+  <img src="assets/images/spice-nation-tandoor.jpg" alt="Fresh tandoori dishes" class="final-cta-blob final-cta-blob-2" />
+  <div class="container-fluid final-cta-content reveal">
+    <p class="eyebrow eyebrow-brass">Bring home the flavour</p>
+    <h2 class="display-heading display-heading-xl">YOUR NEXT CRAVING<br />IS ONLY A CLICK AWAY.</h2>
+    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+      <a href="#menu" class="btn btn-spice btn-lg js-scroll btn-rounded">Order online →</a>
+      <a href="#menu" class="btn btn-spice-outline btn-lg js-scroll btn-rounded">View menu</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer bg-charcoal text-ivory">
+  <div class="container-fluid footer-inner">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <span class="brand-name">SPICE NATION</span>
+        <p class="footer-tag">Authentic · Flavorful · Warm</p>
+      </div>
+      <div class="col-md-4">
+        <nav class="row g-2 footer-nav">
+          <a href="#home" class="col-6 js-scroll">Home</a>
+          <a href="#story" class="col-6 js-scroll">Our Story</a>
+          <a href="#menu" class="col-6 js-scroll">Menu</a>
+          <a href="#gallery" class="col-6 js-scroll">Gallery</a>
+          <a href="#reviews" class="col-6 js-scroll">Reviews</a>
+          <a href="#contact" class="col-6 js-scroll">Contact</a>
+        </nav>
+      </div>
+      <div class="col-md-4 text-md-end">
+        <p class="footer-address">ECIL, Kushaiguda, Secunderabad</p>
+        <a href="tel:07013486961" class="footer-phone">070134 86961</a>
+        <a href="#menu" class="btn btn-spice mt-3 js-scroll btn-rounded">Order online</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Spice Nation. All rights reserved.</span>
+      <span>ECIL · Secunderabad</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Floating mobile controls ===== -->
+<button class="btn btn-spice btn-icon back-to-top d-none" id="backToTop" aria-label="Back to top">↑</button>
+<a href="tel:07013486961" class="call-fab d-lg-none" id="callFab" aria-label="Call Spice Nation">📞</a>
+<div class="mobile-bar d-lg-none" id="mobileBar">
+  <a href="#menu" class="btn btn-spice-outline js-scroll">View menu</a>
+  <a href="#menu" class="btn btn-spice js-scroll btn-rounded">Order online</a>
+</div>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
